@@ -1,1 +1,363 @@
 /* место для вашего кода */
+
+.header {
+
+  display: grid;
+  grid-template-columns: 601px 499px 247px;
+  height: 293px;
+  padding: 92px 49px 92px 51px;
+}
+
+.header__menu {
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 43px;
+  margin-bottom: 45px;
+  list-style-type: circle;
+}
+
+.header__links-list-item {
+  color: #000;
+  font-size: 18px;
+  line-height: normal;
+  text-underline-offset: 4px;
+}
+
+.header__link_active .header__link {
+  text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link {
+  color: #000;
+  line-height: 24.5px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.header__logo-image {
+  width: 93%;
+}
+
+.header__address {
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+  text-underline-offset: 5px;
+}
+
+main {
+}
+
+/*для входной секции*/
+.cover {
+  position: relative;
+  min-width: 1440px;
+  height: calc(757px + 0px);
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.cover__title {
+  height: 757px;
+  padding: 165px 50px 237px 50px;
+}
+
+.aligned-text {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text_center {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0px;
+}
+
+.cover__description {
+  display: grid;
+  grid-template-columns: 1082px 258px;
+  margin-top: 128px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  word-spacing: 17px;
+}
+
+.cover__description-text {
+  padding-top: 12px;
+  padding-left: 372px;
+}
+
+.bet-button {
+  width: 257px;
+  height: 52px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: normal;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* для секции с карточками*/
+.lots {
+  min-width: 1440px;
+  min-height: 524px;
+  margin-top: 180px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.lots__heading {
+  padding-left: 40px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 27px;
+  list-style-type: none;
+}
+
+.lots__card-list-item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 430px;
+  min-height: 450px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.card-link {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+.card_type_film {
+  position: relative;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.card_type_book {
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.card_type_picture {
+  position: relative;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Здесь 0.6 задает степень затемнения */
+  pointer-events: none;
+}
+
+.card__text {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.lots__look-more-link a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 430px auto;
+  min-width: 1440px;
+  height: 487px;
+  margin-top: 181px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.about__column {
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  margin-right: 95px;
+  margin-bottom: 248px;
+  margin-left: 95px;
+  border: solid 2px;
+  border-radius: 240px;
+  padding-top: 1px;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+  background-repeat: no-repeat;
+}
+
+.about__title {
+  margin-top: 100px;
+  margin-left: 25px;
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  gap: 25px;
+  padding-top: 100px;
+  color: #000;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: none;
+}
+
+.footer {
+  display: grid;
+  /* убрал тк тогда футер становится адаптивным 
+  grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: 420px 500px 420px;
+  min-height: 97px;
+  margin: 180px 50px 90px 50px;
+}
+
+.footer__menu {
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+/* не использовал
+.footer__menu-list-item {
+  
+}*/
+
+.footer__menu-link {
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active .footer__menu-link {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row-reverse; /* сделал так, а не марджином или падингом чтобы можно было добавять еще*/
+  gap: 48px;
+  list-style-type: none;
+}
+
+/* не использовал
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+*/
+
+.footer__social-icon {
+  height: 48px;
+}
