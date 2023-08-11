@@ -3,7 +3,7 @@
 .header {
 
   display: grid;
-  grid-template-columns: 601px 499px 247px;
+  grid-template-columns: 596px 504px 247px;
   height: 293px;
   padding: 92px 49px 92px 51px;
 }
@@ -27,10 +27,6 @@
   text-underline-offset: 4px;
 }
 
-.header__link_active .header__link {
-  text-decoration: none;
-}
-
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
@@ -40,13 +36,19 @@
   line-height: 24.5px;
 }
 
+.header__link_active {
+  text-decoration: none;
+}
+
 .header__logo {
   display: block;
-  width: 148px;
+ 
 }
 
 .header__logo-image {
-  width: 93%;
+  /* width: 93%; */
+   width: 148px;
+   height: 105px;
 }
 
 .header__address {
@@ -69,15 +71,17 @@
 .cover {
   position: relative;
   min-width: 1440px;
-  height: calc(757px + 0px);
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .cover__title {
-  height: 757px;
-  padding: 165px 50px 237px 50px;
+  position: relative;
+  z-index: 2;
+  padding: 165px 50px 0px 50px; 
 }
 
 .aligned-text {
@@ -91,12 +95,14 @@
 }
 
 .aligned-text_center {
-  margin-top: 12px;
+  line-height: 100px;
+  padding-top: 20px;
   text-align: center;
 }
 
 .aligned-text_right {
-  margin-top: 5px;
+  line-height: 100px;
+  padding-top: 20px;
   text-align: right;
 }
 
@@ -109,20 +115,24 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: 1082px 258px;
-  margin-top: 128px;
+  margin: 135px 50px 50px 422px;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0;
   word-spacing: 17px;
+  grid-auto-flow: column;
+  gap: 78px;
+  
 }
 
 .cover__description-text {
   padding-top: 12px;
-  padding-left: 372px;
+  text-transform: uppercase;
 }
 
 .bet-button {
@@ -131,11 +141,8 @@
   border: 1px solid #fff;
   color: #fff;
   font-family: Raleway;
-  font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 0;
-  text-align: center;
   text-transform: uppercase;
   word-spacing: normal;
   background-color: transparent;
