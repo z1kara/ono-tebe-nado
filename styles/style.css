@@ -8,9 +8,6 @@
   padding: 92px 49px 92px 51px;
 }
 
-.header__menu {
-}
-
 .header__links-list {
   display: flex;
   flex-direction: row;
@@ -74,8 +71,8 @@
   height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .cover__title {
@@ -95,14 +92,14 @@
 }
 
 .aligned-text_center {
-  line-height: 100px;
   padding-top: 20px;
+  line-height: 100px;
   text-align: center;
 }
 
 .aligned-text_right {
-  line-height: 100px;
   padding-top: 20px;
+  line-height: 100px;
   text-align: right;
 }
 
@@ -118,6 +115,8 @@
   position: relative;
   z-index: 2;
   display: grid;
+  grid-auto-flow: column;
+  gap: 78px;
   margin: 135px 50px 50px 422px;
   color: #fff;
   font-weight: 400;
@@ -125,9 +124,6 @@
   line-height: 28px;
   letter-spacing: 0;
   word-spacing: 17px;
-  grid-auto-flow: column;
-  gap: 78px;
-  
 }
 
 .cover__description-text {
@@ -231,7 +227,7 @@
     0,
     0,
     0.6
-  ); /* Здесь 0.6 задает степень затемнения */
+  );
   pointer-events: none;
 }
 
@@ -269,9 +265,6 @@
   margin-top: 181px;
   padding-right: 50px;
   padding-left: 50px;
-}
-
-.about__column {
 }
 
 .about__logo {
