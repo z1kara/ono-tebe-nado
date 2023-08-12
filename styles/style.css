@@ -1,9 +1,7 @@
-/* место для вашего кода */
-
 .header {
-
   display: grid;
-  grid-template-columns: 596px 504px 247px;
+  grid-template-columns: 3fr 1fr 3fr;
+  min-width: 1440px;
   height: 293px;
   padding: 92px 49px 92px 51px;
 }
@@ -38,17 +36,19 @@
 }
 
 .header__logo {
-  display: block;
- 
+  justify-self: center;
 }
 
 .header__logo-image {
   /* width: 93%; */
-   width: 148px;
-   height: 105px;
+  width: 148px;
+  height: 105px;
 }
 
 .header__address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
   margin-top: 5px;
   margin-bottom: 7px;
 }
@@ -56,7 +56,6 @@
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: start;
   color: #000;
   font-size: 18px;
   font-style: normal;
@@ -73,6 +72,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
 }
 
 .aligned-text {
@@ -214,22 +224,6 @@
   background-size: 100% auto;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.6
-  );
-  pointer-events: none;
-}
-
 .card__text {
   z-index: 2;
   display: flex;
@@ -307,9 +301,8 @@
 
 .footer {
   display: grid;
-  /* убрал тк тогда футер становится адаптивным 
-  grid-template-columns: 1fr 1fr 1fr;*/
-  grid-template-columns: 420px 500px 420px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1340px;
   min-height: 97px;
   margin: 180px 50px 90px 50px;
 }
@@ -324,16 +317,11 @@
   list-style-type: none;
 }
 
-/* не использовал
-.footer__menu-list-item {
-  
-}*/
-
 .footer__menu-link {
   text-underline-offset: 4px;
 }
 
-.footer__menu-link_active .footer__menu-link {
+.footer__menu-link_active {
   text-decoration: none;
 }
 
