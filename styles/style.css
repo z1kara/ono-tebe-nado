@@ -201,8 +201,8 @@
   position: relative;
   background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
   background-position: center;
+  background-size: 100% auto;
 }
 
 .card_type_book {
@@ -222,27 +222,27 @@
 .card__title {
   position: relative;
   z-index: 2;
+  padding: 50px 40px 0 40px;
   color: #FFF;
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   line-height: 120%;
   text-decoration-line: underline;
-  text-transform: uppercase;
-  padding: 50px 40px 0 40px;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  text-transform: uppercase;
   
 }
 
 .card__text {
-  padding-bottom: 50px;
   position: relative;
   z-index: 2;
+  padding: 0px 40px 50px 40px;
+  padding-bottom: 50px;
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  padding: 0px 40px 50px 40px;
 }
 
 .lots__look-more-link {
