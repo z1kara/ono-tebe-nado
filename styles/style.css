@@ -183,7 +183,6 @@
 .lots__card-list-item {
   width: 430px;
   min-height: 450px;
-  
 }
 
 .card {
@@ -223,7 +222,7 @@
   position: relative;
   z-index: 2;
   padding: 50px 40px 0 40px;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -231,7 +230,6 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
   text-transform: uppercase;
-  
 }
 
 .card__text {
@@ -261,6 +259,7 @@
 .about {
   display: grid;
   grid-template-columns: 430px auto;
+  grid-template-rows: 240px 248px;
   min-width: 1440px;
   height: 487px;
   margin-top: 181px;
@@ -298,13 +297,13 @@
 }
 
 .about__text {
+  display: grid;
+  grid-column-start: 2;
   gap: 25px;
-  padding-top: 100px;
+  padding-top: 8px;
+  padding-left: 25px;
   color: #000;
-  font-family: Raleway;
-  font-weight: 400;
   font-size: 20px;
-  text-transform: none;
 }
 
 .footer {
