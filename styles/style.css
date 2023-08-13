@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
   min-width: 1440px;
-  height: 293px;
   padding: 92px 49px 92px 51px;
 }
 
@@ -10,8 +9,7 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
-  margin-top: 43px;
-  margin-bottom: 45px;
+  padding-top: 43px;
   list-style-type: circle;
 }
 
